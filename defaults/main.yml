@@ -28,4 +28,7 @@ postgresql_objects_groups: []
 postgresql_objects_databases: []
 postgresql_objects_privileges: []
 
-postgresql_obejcts_install_pretasks: true
+postgresql_objects_install_pretasks: true
+
+postgresql_objects_become: "{{ postgresql_objects_become_user is defined }}"
+postgresql_objects_manage_postgres: no
