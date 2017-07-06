@@ -31,4 +31,5 @@ postgresql_objects_privileges: []
 postgresql_objects_install_pretasks: true
 
 postgresql_objects_become: "{{ postgresql_objects_become_user is defined }}"
-postgresql_objects_manage_postgres: no
+postgresql_objects_manage_postgres: false
+postgresql_objects_debug: true
